@@ -1,0 +1,13 @@
+由于部分系统安装简装版XP或win7系统，部分文件并没有安装完全，会造成部分主机出现USB驱动安装后，在
+设备管理器中看到com口一直带有感叹号。更新驱动时提示inf文件服务段无效，这说明系统中缺少mdmcpq.inf
+和usbser.sys文件。
+解决方法如下：
+解决方法：
+方法一，自动：
+点击Patch文件夹下的Patch_Installer.exe 可执行文件。
+
+方法二，手动：
+第一步：将Patch文件下的mdmcpq.inf，mdmcpq.PNF拷贝到系统目录C:\WINDOWS\inf文件夹下。注意inf文件夹
+默认是隐藏的。
+第二步：将Patch文件下的usbser.sys拷贝到系统目录C:\WINDOWS\system32\drivers下。
+

@@ -1,0 +1,7 @@
+Please download your USB driver from the link.
+
+Prolific Driver:
+http://www.prolific.com.tw/eng/downloads.asp?ID=31
+
+
+

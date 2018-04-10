@@ -1,0 +1,6 @@
+Please download your USB driver from the link.
+
+FTDI Driver:
+http://www.ftdichip.com/Drivers/VCP.htm
+
+

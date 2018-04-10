@@ -1,0 +1,449 @@
+=====================================================================================
+Package : <<MTK_Datacard_FWT_USB_Driver v1.1250.0>>
+Date    : <<2012/12/13>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v1.12.50.0
+
+[Quick Summary]
+ 
+[中文]
+1. 添加对PID 00A7的支持
+2. 该版本com driver v1.1250.0已通过微软WHQL认证。
+
+[English]
+1. Add support of PID 00A7.
+2. The driver with version v1.1250.0 have passed Microsoft WHQL certification.
+ 
+[Release Note] 
+
+New Features:
+N/A
+
+Bug Fix:
+N/A
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)You can get com driver log in %SystemRoot%\system32\LogFiles\WMI\MediaTek,
+     the log file name is COM_LOG.etl.xxx(the "xxx" is like 001, etc.)
+
+=====================================================================================
+Package : <<MTK_Datacard_FWT_USB_Driver v1.1248.0>>
+Date    : <<2012/11/28>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v1.12.48.0
+
+[Quick Summary]
+ 
+[中文]
+1. 拔卡时等待所有的DPC退出，以修复“下载firmware时无法检测到COM口”问题。
+2. 在sys文件中去掉MTK标示。
+3. 该版本com driver v1.1248.0未通过微软WHQL认证。
+
+[English]
+1. Wait for all DPCs exit when pull out device, which fix issue “Can't find COM port when download firmware”.
+2. Remove MTK Mark in sys file.
+3. please note, WHQL certificate is not ready in this version.
+   Test mode should enable as following steps:
+        1)cmd and right click for "run as administrator"
+        2)bcdedit /set testsigning ON
+        3)reboot
+        4)install mtk com driver
+ 
+[Release Note] 
+
+New Features:
+N/A
+
+Bug Fix:
+[MOLY00005265]
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)You can get com driver log in %SystemRoot%\system32\LogFiles\WMI\MediaTek,
+     the log file name is COM_LOG.etl.xxx(the "xxx" is like 001, etc.)
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.44.0>>
+Date    : <<2012/11/01>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v1.12.44.0
+
+[Quick Summary]
+
+[中文]
+1. 加入对PID 7106的支持。
+2. 该版本com driver v1.1244.0通过了微软WHQL认证。
+
+[English]
+1. Add support on device which PID is 7106.
+2. The driver with version v1.1244.0 have passed Microsoft WHQL certification.
+
+[Release Note]
+
+New Features:
+N/A
+
+Bug Fix:
+N/A
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)You can get com driver log in %SystemRoot%\system32\LogFiles\WMI\MediaTek,
+     the log file name is COM_LOG.etl.xxx(the "xxx" is like 001, etc.)
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.42.1>>
+Date    : <<2012/10/17>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v1.12.42.1
+
+[Quick Summary]
+
+[中文]
+
+1. 修复在Win8 64bit上吐log会导致blue screen的问题。
+2. 替换com_log_script机制为mtk_etw_log机制。
+3. 关于如何获取com driver log,请参考本文档"Related documents"部分。
+4. 该版本Driver未通过微软WHQL认证，仅供内部测试使用。
+
+[English]
+
+1. Fix the issue that driver output log may cause blue sreen on Win8 64bit.
+2. Remove com_log_script mechanism and add mtk_etw_log mechanism.
+3. About how to get com driver log, please refer to "Related documents" part of this release note.
+4. The driver with version v1.1242.1 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+N/A
+
+Bug Fix:
+N/A
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)You can get com driver log in %SystemRoot%\system32\LogFiles\WMI\MediaTek,
+     the log file name is COM_LOG.etl.xxx(the "xxx" is like 001, etc.)
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.42.0>>
+Date    : <<2012/10/15>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v1.12.42.0
+
+[Quick Summary]
+
+[中文]
+
+1. 当target error 时，driver 仍然允许application open com port。
+2. 该版本Driver未通过微软WHQL认证，仅供内部测试使用。
+
+[English]
+
+1. When target error happen, driver still allow application to open com port.
+2. The driver with version v1.1242.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+N/A
+
+Bug Fix:
+N/A
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.41.0>>
+Date    : <<2012/10/08>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\com_v1.12.41.0
+
+[Quick Summary]
+
+[中文]
+
+1. 修正了下列CQ。
+3. 该版本Driver未通过微软WHQL认证，仅供内部测试使用。
+
+[English]
+
+1. Fix the follow CQ. 
+2. The driver with version v1.1241.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+N/A
+
+Bug Fix:
+1. [MOLY00004435][6280_SQC][Data card][OS IOT] Host Blue Screen: DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.39.1>>
+Date    : <<2012/09/28>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+
+
+[Quick Summary]
+
+[中文]
+
+1. 用InstallUpgradeDriversInInf和RemoveDevicesInInf代替用config.ini安装卸载
+2. 加入上报modem speed：42/21/14.4 Mbps
+3. 该版本Driver未通过微软WHQL认证，仅供内部测试使用
+
+[English]
+
+1. Fix the uninstallation behavior.
+2. Add modem speed 42/21/14.4 Mbps
+3. The driver with version v1.1239.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+N/A
+
+Bug Fix:
+N/A
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.39.0>>
+Date    : <<2012/09/27>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+
+
+[Quick Summary]
+
+[中文]
+
+1. 修改了uninstall的行为，加入了生成log file机制。
+2. 升级版本号到v1.12.39.0
+3. 该版本Driver未通过微软WHQL认证，仅供内部测试使用
+
+[English]
+
+1. Fix the uninstallation behavior. Add generating log file mechanism.
+2. Update version to v1.12.39.0
+3. The driver with version v1.1238.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+
+1. Add generating log file mechanism, the NSIS log file is in: 
+%SystemRoot%\system32\LogFiles\MediaTek\COM_Driver_Install\install.log
+%SystemRoot%\system32\LogFiles\MediaTek\COM_Driver_Install\uninstall.log
+
+
+Bug Fix:
+
+1. Fix the uninstallation behavior -- check error flag after delete uninstall registry.
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.38.1>>
+Date    : <<2012/09/19>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+http://teams.mediatek.inc/sites/ModemHostDriver/Windows%20COM%20Driver/Forms/AllItems.aspx?RootFolder=%2fsites%2fModemHostDriver%2fWindows%20COM%20Driver%2f02%5fRelease%2f03%5fDriver%5fSDK%5fRelease%2fv1%2e12%2e38%2e1&FolderCTID=&View=%7bA7225B2C%2d7D8C%2d44F4%2dA314%2d1402E68199EE%7d
+
+[Quick Summary]
+
+[中文]
+
+1. 该版本Driver未通过微软WHQL认证，仅供内部测试使用
+
+[English]
+
+1. The driver with version v1.1237.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+
+N/A
+
+Bug Fix:
+
+1. resume from hibernate/sleep, modem maybe can't dialup.
+
+Enhancements:
+N/A
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.34.0>>
+Date    : <<2012/08/24>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\v1.12.34.0
+
+[Quick Summary]
+
+[中文]
+
+1. MTK USB COM driver更新到v1.1234.0.该版本精简了WDF Co-installer，仅使用用WDF co-installer 1.5.
+2. 该版本Driver未通过微软WHQL认证，仅供内部测试使用
+
+[English]
+
+1. MTK USB COM driver updates to v1.1234.0. This verison simplifies the WDF co-installer and only uses WDF co-installer 1.5.
+2. The driver with version v1.1233.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+
+N/A
+
+Bug Fix:
+
+N/A
+
+Enhancements:
+1. MTK USB COM driver updates to v1.1234.0. This verison simplifies the WDF co-installer and only uses WDF co-installer 1.5.
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.33.0>>
+Date    : <<2012/08/16>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\v1.12.33.0
+
+[Quick Summary]
+
+[中文]
+
+1. 包含MediaTek USB COM Driver到v1.1233.0. 参考MTK_USB_COM_Driver文件夹.
+2. 该版本Driver未通过微软WHQL认证，仅供内部测试使用
+
+[English]
+
+1. Include the MediaTek USB COM Driver version v1.1231.0 which is in "MTK_USB_COM_Driver" folder.
+2. The driver with version v1.1233.0 didn't pass Microsoft WHQL certification and is for internal test only. 
+
+[Release Note]
+
+New Features:
+
+N/A
+
+Bug Fix:
+1. burst data before purge command maybe lead application can't read data.
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
+
+=====================================================================================
+Package : <<MTK_USB_COM_Driver_SDK_v1.12.32.0>>
+Date    : <<2012/08/09>>
+-------------------------------------------------------------------------------------
+The latest version of MTK_USB_COM_Driver_SDK is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\sdk\v1.12.32.0
+
+The InstallDriver.exe is located under:
+\\glbfs14\sw_releases\Wireless_Global_Tools\Tool_Release\@Drivers\MTK_Datacard_FWT_USB_Driver\v1.12.32.0
+
+[Quick Summary]
+
+[中文]
+
+1. 包含MediaTek USB COM Driver到v1.1231.0. 参考MTK_USB_COM_Driver文件夹.
+2. 该版本Driver已通过微软WHQL认证，并获得Windows Logo catalog文件。 
+
+[English]
+
+1. Include the MediaTek USB COM Driver version v1.1231.0 which is in "MTK_USB_COM_Driver" folder.
+2. The driver with version v1.1231.0 has passed Microsoft WHQL certification and obtained the Windows Logo catalog file.
+
+[Release Note]
+
+New Features:
+1. The driver with version v1.1231.0 has passed Microsoft WHQL certification and obtained the Windows Logo catalog file. 
+
+Bug Fix:
+NA
+
+Related documents:
+1. How to capture driver log:
+  a)Start com driver log by Executing com_log_start.bat which in com_log_script folder
+    Log information will automatic save to log file every 1 second
+  b)Stop com driver log by Executing com_log_stop.bat which in com_log_script folder    
+    Log file (xxx.etl) is ready to use in directory %SystemRoot%\system32\Logfiles\ETW_LOG\. Please send the file to MTK when issue occurred.
